@@ -1,7 +1,9 @@
 local options = {
   filters = {
-    dotfiles = false,
-    exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
+    dotfiles = false, -- Toggle with H
+    git_ignored = true, -- Toggle with I
+    custom = { "node_modules" }, -- Toggle with U
+    exclude = { vim.fn.stdpath "config" .. "/lua/custom" }, -- Always show
   },
   disable_netrw = true,
   hijack_netrw = true,
