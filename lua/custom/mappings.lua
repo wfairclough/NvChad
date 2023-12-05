@@ -6,7 +6,9 @@ local M = {}
 
 M.general = {
   n = {
-    -- ["<C-p>"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["<C-p>"] = { ":", "enter command mode", opts = { nowait = true } },
+    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+
     ["<C-d>"] = { "<C-d>zz", "Page down and re-center" },
     ["<C-u>"] = { "<C-u>zz", "Page up and re-center" },
     -- ["<C-p>"] = { "xi<cr><esc>f,l", "Do an echo", opts = { nowait = true } },
