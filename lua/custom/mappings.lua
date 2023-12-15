@@ -63,10 +63,24 @@ M.general = {
     -- ["<leader>ac"] = { ng.goto_component_with_template_file, opts = ng_opts },
     -- ["<leader>aT"] = { ng.get_template_tcb, opts = ng_opts },
 
+    ["<leader>wc"] = {
+      function() vim.cmd('lua require("custom.switch_case").switch_case()') end,
+      "Switch Case",
+      opts = { nowait = true },
+    },
   },
   i = {
     -- This is a word sentence please help
-  }
+  },
+  v = {
+    ["<leader>wc"] = {
+      function() vim.cmd('lua require("custom.switch_case").switch_case()') end,
+      "Switch Case",
+      opts = { nowait = true },
+    },
+-- require'switch_case'
+-- vim.api.nvim_set_keymap('n', '<Leader>s', '<cmd>lua require("switch_case").switch_case()<CR>', {noremap = true, silent = true})
+  },
 }
 -- M.abc = {
 --   n = {
